@@ -1,35 +1,35 @@
-import { Entity, model, property } from "@loopback/repository";
+import {Entity, model, property} from '@loopback/repository';
 
 @model()
 export class Todo extends Entity {
   @property({
-    type: "number",
+    type: 'number',
     id: true,
-    generated: false
+    generated: false,
   })
   id?: number;
 
   @property({
-    type: "string",
-    required: true
+    type: 'string',
+    required: true,
   })
   title: string;
 
   @property({
-    type: "string",
+    type: 'string',
     required: false,
-    default: ""
+    default: '',
   })
   descr: string;
 
   @property({
-    type: "boolean"
+    type: 'boolean',
   })
   isComplete?: boolean;
 
   @property({
-    type: "boolean",
-    default: false
+    type: 'boolean',
+    default: false,
   })
   isPublic?: boolean;
 
