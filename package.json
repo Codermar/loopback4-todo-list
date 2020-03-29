@@ -36,7 +36,7 @@
     "type": "git"
   },
   "author": "",
-  "license": "",
+  "license": "MIT",
   "files": [
     "README.md",
     "index.js",
